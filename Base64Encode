@@ -1,0 +1,9 @@
+import base64
+
+def base64_encode(data):
+  return base64.b64encode(data)
+
+data = input("Enter some data: ")
+encoded_data = base64_encode(data.encode())
+
+print(encoded_data)
